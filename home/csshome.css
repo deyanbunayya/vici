@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: calc(4px + 0.45vw);
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+*:focus {
+  outline: 0;
+}
+/* Primary
+--------------------------------*/
+.main {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+header {
+    line-height: 12rem;
+    height: 12rem;
+}
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header li {
+    float: left;
+    width: 12.5%;
+    text-align: center;
+    text-transform: uppercase;
+}
+header li:nth-child(4) {
+    width: 25%;
+}
+header li a {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.text {
+    font-size: 2rem;
+    padding: 2rem 0;
+    -webkit-columns: 3;
+    columns: 3;
+}
+.text p {
+    margin-bottom: 2rem;
+}
+@media screen and (max-width: 800px) {
+    header ul li:not(:nth-child(4)) {
+        display: none;
+    }
+    header ul li:nth-child(4) {
+        width: 100%;
+    }
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+} 
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #A9A9A9;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: px;
+}
+
+.container .btn2 {
+   position: absolute;
+  top: 39.5%;
+  left: 46.19%;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.container .btn2:hover {
+  background-color: red;
+} 
+
+@-webkit-keyframes glowing {
+  0% { background-color: white; -webkit-box-shadow: 0 0 3px white; }
+  50% { background-color: black ; -webkit-box-shadow: 0 0 10px black ; }
+  100% { background-color: white; -webkit-box-shadow: 0 0 3px white; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: white; -moz-box-shadow: 0 0 3px white; }
+  50% { background-color: black ; -moz-box-shadow: 0 0 10px black ; }
+  100% { background-color: white; -moz-box-shadow: 0 0 3px white; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: white; box-shadow: 0 0 3px white; }
+  50% { background-color: black ; box-shadow: 0 0 10px black ; }
+  100% { background-color: white; box-shadow: 0 0 3px white; }
+}
+
+@keyframes glowing {
+  0% { background-color: white; box-shadow: 0 0 3px white; }
+  50% { background-color: black ; box-shadow: 0 0 10px black ; }
+  100% { background-color: white; box-shadow: 0 0 3px white; }
+}
+
+.btn2 {
+  -webkit-animation: glowing 4000ms infinite;
+  -moz-animation: glowing 4000ms infinite;
+  -o-animation: glowing 4000ms infinite;
+  animation: glowing 4000ms infinite;
+}
+
